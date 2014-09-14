@@ -1,70 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Интегрирование</title>
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <meta charset="UTF-8">
+
+    <title>Интегрирование</title>
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
 </head>
+
 <body>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Численное интегрирование</a>
+            </div>
 
-      <a class="navbar-brand" href="#">Численное интегрирование</a>
-    </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href=
+                    "#">Методы с постоянным шагом<span class=
+                    "caret"></span></a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <ul class="dropdown-menu">
+                        <li id="right">
+                            <a href="#">Метод правых частей прямоугольников</a>
+                        </li>
 
-      <ul class="nav navbar-nav">
+                        <li id="left">
+                            <a href="#">Метод левых частей прямоугольников</a>
+                        </li>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Методы с постоянным шагом<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li id="right"><a href="#">Метод правых частей прямоугольников</a></li>
-            <li id="left"><a href="#">Метод левых частей прямоугольников</a></li>
-            <li id="trapezoid"><a href="#">Метод трапеций</a></li>
-            <li id="parabola"><a href="#">Метод парабол</a></li>
-          </ul>
-        </li>
-        <li class="dropdown2">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Методы с переменным шагом<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li id="first"><a href="#">Метод по 1 алгоритму</a></li>
-            <li id="second"><a href="#">Метод по 2 алгоритму</a></li>
-          </ul>
-        </li>
-      </ul>
-  </div><!-- /.container-fluid -->
-</nav>
+                        <li id="trapezoid">
+                            <a href="#">Метод трапеций</a>
+                        </li>
 
-<h1>Выберите пункт меню сверху..</h1>
+                        <li id="parabola">
+                            <a href="#">Метод парабол</a>
+                        </li>
+                    </ul>
+                </li>
 
-  <div class="input-group">
-    <span class="input-group-addon">Количество делений</span>
-    <input type="text" class="form-control">
-  </div>
+                <li class="dropdown2">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href=
+                    "#">Методы с переменным шагом<span class=
+                    "caret"></span></a>
 
-<button type="button" class="btn btn-primary right_button">Интегрировать</button>
-<button type="button" class="btn btn-primary left_button">Интегрировать</button>
-<button type="button" class="btn btn-primary trapezoid_button">Интегрировать</button>
-<button type="button" class="btn btn-primary parabola_button">Интегрировать</button>
-<button type="button" class="btn btn-primary first_button">Интегрировать</button>
-<button type="button" class="btn btn-primary second_button">Интегрировать</button>
+                    <ul class="dropdown-menu">
+                        <li id="first">
+                            <a href="#">Метод по 1 алгоритму</a>
+                        </li>
 
-<p class="result">Результат: <mark id="numeric"></mark></p>
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container text-center">
-    <p class="text-muted credit">Ahmed Guseynov</p>
-</div>
+                        <li id="second">
+                            <a href="#">Метод по 2 алгоритму</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-</nav>
+    <h1>Выберите пункт меню сверху..</h1>
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <div class="input-group">
+        <span class="input-group-addon">Количество делений</span> <input class=
+        "form-control" type="text">
+    </div><button class="btn btn-primary right_button" type=
+    "button">Интегрировать</button> <button class="btn btn-primary left_button"
+    type="button">Интегрировать</button> <button class=
+    "btn btn-primary trapezoid_button" type="button">Интегрировать</button>
+    <button class="btn btn-primary parabola_button" type=
+    "button">Интегрировать</button> <button class=
+    "btn btn-primary first_button" type="button">Интегрировать</button>
+    <button class="btn btn-primary second_button" type=
+    "button">Интегрировать</button>
+
+    <p class="result">Результат: <mark id="numeric"></mark></p>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container text-center">
+            <p class="text-muted credit">Ahmed Guseynov</p>
+        </div>
+    </nav>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>

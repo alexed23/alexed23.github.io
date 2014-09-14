@@ -1,54 +1,51 @@
-.dropdown-menu li a:hover,
-.dropdown-toggle:hover,
-.open .dropdown-toggle
- {
-color: white !important; 	
-background:#4099FF !important;
-
+.dropdown-menu li a:hover,.dropdown-toggle:hover,.open .dropdown-toggle {
+    color:#fff!important;
+    background:#4099FF!important
 }
 
 .credit {
-padding-top:10px;
--webkit-user-select: none;
-user-select: none;
-cursor: default;
+    padding-top:10px;
+    -webkit-user-select:none;
+    user-select:none;
+    cursor:default
 }
 
 .dropdown2 {
-
-	margin-left:10px;
+    margin-left:10px
 }
 
 h1 {
-	padding-top:10px;
-font-size:5rem;
-color:lightgray;
-padding-left:20px;
--webkit-user-select: none;
-user-select: none;
-cursor: default;
+    padding-top:10px;
+    font-size:5rem;
+    color:lightgray;
+    padding-left:20px;
+    -webkit-user-select:none;
+    user-select:none;
+    cursor:default
 }
 
 .input-group {
-	width:260px;
-	padding-left:20px;
-	display:none;
+    width:260px;
+    padding-left:20px;
+    display:none
 }
 
-.right_button, .left_button, .trapezoid_button, .parabola_button, .first_button, .second_button {
-	margin:10px 0 0 20px;
-	display:none;
+.right_button,.left_button,.trapezoid_button,.parabola_button,.first_button,.second_button {
+    margin:10px 0 0 20px;
+    display:none
 }
 
 .result {
-	font-size:2rem;
-	margin:10px 0 0 20px;
-	display:none;
+    font-size:2rem;
+    margin:10px 0 0 20px;
+    display:none
 }
 
-.navbar-nav, .navbar-brand {
-	-webkit-user-select: none;
-user-select: none;
+.navbar-nav,.navbar-brand {
+    -webkit-user-select:none;
+    user-select:none
 }
 
-body { padding-bottom: 70px; }
+body {
+    padding-bottom:70px
+}
