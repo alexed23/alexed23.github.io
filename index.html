@@ -2,12 +2,69 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>glitch</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Интегрирование</title>
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
 <body>
-	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 
-<div class="glitch" data-text="alexed23">alexed23</div> 
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="#">Численное интегрирование</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Методы с постоянным шагом<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="right"><a href="#">Метод правых частей прямоугольников</a></li>
+            <li id="left"><a href="#">Метод левых частей прямоугольников</a></li>
+            <li id="trapezoid"><a href="#">Метод трапеций</a></li>
+            <li id="parabola"><a href="#">Метод парабол</a></li>
+          </ul>
+        </li>
+        <li class="dropdown2">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Методы с переменным шагом<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="first"><a href="#">Метод по 1 алгоритму</a></li>
+            <li id="second"><a href="#">Метод по 2 алгоритму</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<h1>Выберите пункт меню сверху..</h1>
+
+  <div class="input-group">
+    <span class="input-group-addon">Количество делений</span>
+    <input type="text" class="form-control">
+  </div>
+
+<button type="button" class="btn btn-primary right_button">Интегрировать</button>
+<button type="button" class="btn btn-primary left_button">Интегрировать</button>
+<button type="button" class="btn btn-primary trapezoid_button">Интегрировать</button>
+<button type="button" class="btn btn-primary parabola_button">Интегрировать</button>
+<button type="button" class="btn btn-primary first_button">Интегрировать</button>
+<button type="button" class="btn btn-primary second_button">Интегрировать</button>
+
+<p class="result">Результат: <mark id="numeric"></mark></p>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container text-center">
+    <p class="text-muted credit">Ahmed Guseynov</p>
+</div>
+
+</nav>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

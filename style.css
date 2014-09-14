@@ -1,53 +1,54 @@
-body{
-  background:black;
-  font-family: 'Varela', sans-serif;
+.dropdown-menu li a:hover,
+.dropdown-toggle:hover,
+.open .dropdown-toggle
+ {
+color: white !important; 	
+background:#4099FF !important;
+
 }
 
-.glitch{
-  color:white;
-  font-size:100px;
-  position:relative;
-  width:400px;
-  margin:0 auto;
-}
-@keyframes noise-anim{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.glitch:after{
-  content:attr(data-text);
-  position:absolute;
-  left:2px;
-  text-shadow:-1px 0 red;
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim 2s infinite linear alternate-reverse;
+.credit {
+padding-top:10px;
+-webkit-user-select: none;
+user-select: none;
+cursor: default;
 }
 
-@keyframes noise-anim-2{
-  $steps:20;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
+.dropdown2 {
+
+	margin-left:10px;
 }
-.glitch:before{
-  content:attr(data-text);
-  position:absolute;
-  left:-2px;
-  text-shadow:1px 0 blue; 
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim-2 3s infinite linear alternate-reverse;
+
+h1 {
+	padding-top:10px;
+font-size:5rem;
+color:lightgray;
+padding-left:20px;
+-webkit-user-select: none;
+user-select: none;
+cursor: default;
 }
+
+.input-group {
+	width:260px;
+	padding-left:20px;
+	display:none;
+}
+
+.right_button, .left_button, .trapezoid_button, .parabola_button, .first_button, .second_button {
+	margin:10px 0 0 20px;
+	display:none;
+}
+
+.result {
+	font-size:2rem;
+	margin:10px 0 0 20px;
+	display:none;
+}
+
+.navbar-nav, .navbar-brand {
+	-webkit-user-select: none;
+user-select: none;
+}
+
+body { padding-bottom: 70px; }
