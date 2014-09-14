@@ -1,0 +1,150 @@
+html {
+    height:100%;
+    width:100%;
+    background-image:url(img/background.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -webkit-user-select:none;
+    user-select:none
+}
+
+body {
+    height:100%;
+    width:100%;
+    display:table;
+    position:absolute
+}
+
+main {
+    display:table-cell;
+    vertical-align:middle
+}
+
+.wrapper {
+    max-width:380px;
+    text-align:center;
+    height:auto;
+    margin:auto;
+    background-image:url(img/wrapper_back.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    padding-top:80px;
+    border-radius:4px;
+    box-shadow:0 50px 80px -15px #131313
+}
+
+.photo {
+    width:132px;
+    height:132px;
+    margin:auto;
+    background-image:url(img/avatar.png);
+    -webkit-background-size:100%;
+    background-size:100%
+}
+
+.description {
+    margin-top:1.2rem;
+    font-family:'Raleway',sans-serif;
+    text-align:center;
+    cursor:default
+}
+
+.name {
+    color:#FFF;
+    font-size:1.5rem;
+    font-weight:200;
+    padding-top:15px;
+    -webkit-font-smoothing:antialiased!important;
+    text-rendering:optimizeLegibility!important
+}
+
+.position {
+    color:#648EC6;
+    margin-top:5px;
+    font-size:1.2rem;
+    font-weight:200;
+    text-rendering:optimizeLegibility!important;
+    -webkit-font-smoothing:antialiased!important
+}
+
+.sign {
+    background-image:url(img/sign.png);
+    -webkit-background-size:100%;
+    background-size:100%;
+    width:36px;
+    height:17px;
+    margin:15px auto
+}
+
+.text {
+    font-size:.8rem;
+    padding-left:45px;
+    padding-right:45px;
+    line-height:1.5rem;
+    color:#FFF;
+    font-weight:300;
+    text-rendering:optimizeLegibility!important;
+    -webkit-font-smoothing:antialiased!important
+}
+
+.social {
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:60px;
+    margin:6em 0 0;
+    text-align:center;
+    list-style:none
+}
+
+.social li {
+    margin-left:20px;
+    margin-right:20px;
+    display:inline-block
+}
+
+.social a {
+    display:block;
+    overflow:hidden;
+    background-image:url(img/sprites.png)
+}
+
+.social .icon-twitter a {
+    background-position:0 -400px;
+    width:48px;
+    height:50px
+}
+
+.social .icon-twitter a:hover {
+    background-position:0 -500px;
+    width:48px;
+    height:50px
+}
+
+.social .icon-dribble a {
+    background-position:0 0;
+    width:48px;
+    height:50px
+}
+
+.social .icon-dribble a:hover {
+    background-position:0 -100px;
+    width:48px;
+    height:50px
+}
+
+.social .icon-linkedin a {
+    background-position:0 -200px;
+    width:47px;
+    height:50px
+}
+
+.social .icon-linkedin a:hover {
+    background-position:0 -300px;
+    width:47px;
+    height:50px
+}
