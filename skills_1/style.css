@@ -1,9 +1,7 @@
 html {
     height:100%;
     width:100%;
-    background-image:url(img/background.png);
-    background-repeat:no-repeat;
-    background-position:center;
+    background: url(img/background.png) no-repeat center;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -29,8 +27,7 @@ main {
     text-align:center;
     height:auto;
     margin:auto;
-    background-image:url(img/wrapper_back.png);
-    background-repeat:no-repeat;
+    background: url(img/wrapper_back.png) no-repeat;
     -webkit-background-size:cover;
     background-size:cover;
     padding-top:80px;
