@@ -1,0 +1,38 @@
+.credit {
+    padding-top:10px;
+    -webkit-user-select:none;
+    user-select:none;
+    cursor:default
+}
+
+.questions {
+    padding-left:2%
+}
+
+body {
+    padding-bottom:120px
+}
+
+h4 {
+    margin-top:40px
+}
+
+audio {
+    margin-top:20px
+}
+
+.btn {
+    display:block;
+    margin-top:2%
+}
+
+.result {
+    width:80%;
+    margin-top:5%;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.bad,.average,.good,.excellent,.result {
+    display:none
+}
