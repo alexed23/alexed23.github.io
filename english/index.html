@@ -16,8 +16,10 @@
         </div>
     </nav>
 
-    <div class="questions">
-        <h4>Question 1.</h4>
+    <div class="questions container-fluid">
+<div class="row">
+        <div class="text col-lg-3">
+        <h4 class="header">Question 1.</h4>
 
         <h5>..... Caviar in the fridge.</h5><select id="1">
             <option value="1">
@@ -319,9 +321,100 @@
                 by his ownership
             </option>
         </select>
+</div>
+<div class="video col-lg-4">
+    <center><h4 class="header">In this part of the test, you have to watch a video and
+        answer the listening comprehension questions below the video.</h4></center>
 
-        <h4>In this part of the test, you have to listen to a conversation and
-        answer ten multiple-choice questions.</h4><audio controls="" src=
+
+<video controls="true">
+ <source src="video.mp4">
+</video>
+        <h4>Question 1.</h4>
+        <h5>The parents are moving to Antwerp in ____.</h5>
+        <select id="video_1">
+            <option value="1">
+                July
+            </option>
+
+            <option value="2">
+                January
+            </option>
+
+            <option value="correct">
+                June
+            </option>
+        </select>
+
+        <h4>Question 2.</h4>
+        <h5>Why is the young man upset?</h5>
+        <select id="video_2">
+            <option value="correct">
+                Because the parents will leave before the baby is born
+            </option>
+
+            <option value="2">
+                Because the parents will still be around when the baby is born
+            </option>
+
+            <option value="3">
+                Because he doesn't think Antwerp is an exciting city
+            </option>
+        </select>
+
+        <h4>Question 3.</h4>
+        <h5>How long had the parents been talking about moving before they finally decided to do it?</h5>
+        <select id="video_3">
+            <option value="1">
+                5 years
+            </option>
+
+            <option value="2">
+                10 years
+            </option>
+
+            <option value="correct">
+                15 years
+            </option>
+        </select>
+
+        <h4>Question 4.</h4>
+        <h5>How far will the parents be from their grandchild?</h5>
+        <select id="video_4">
+            <option value="1">
+                3,000 miles
+            </option>
+
+            <option value="correct">
+                More than 3,000 miles
+            </option>
+
+            <option value="3">
+                A little less than 3,000 miles
+            </option>
+        </select>
+
+        <h4>Question 5.</h4>
+        <h5>How does the father refer to Antwerp?</h5>
+        <select id="video_5">
+            <option value="1">
+                He's excited
+            </option>
+
+            <option value="correct">
+                The city of light
+            </option>
+
+            <option value="3">
+                In June
+            </option>
+        </select>
+    </div>
+<div class="audio col-lg-4">
+    <div class="audio_container">
+<center><h4 class="header">In this part of the test, you have to listen to a conversation and
+        answer ten multiple-choice questions.</h4></center>
+        <audio controls="" src=
         "sample.mp3"></audio>
 
         <h4>Question 1.</h4>
@@ -527,8 +620,16 @@
             <option value="correct">
                 Didn’t enjoy the food
             </option>
-        </select> <button class="btn btn-primary btn-lg" type=
-        "button">Proceed</button>
+        </select> 
+    </div>
+</div>
+
+<!--here-->
+</div>
+</div>
+
+
+        <button class="btn btn-primary btn-lg" type="button">Proceed</button>
 
         <div class="result">
             <h1 class="bad">Try again!</h1>
@@ -540,18 +641,13 @@
             <h1 class="excellent">Excellent!</h1>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped active" style=
-                "width: 4%"></div>
+                <div class="progress-bar progress-bar-striped active" style="width: 4%"></div>
             </div>
 
             <div class="score"></div>
         </div>
-    </div><!-- Footer -->
+    
 
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container text-center">
-            <p class="text-muted credit">Ahmed Guseynov</p>
-        </div>
-    </nav><script src="jquery-2.1.1.min.js"></script> <script src="bootstrap.min.js"></script> <script src="script.js"></script>
+<script src="jquery-2.1.1.min.js"></script> <script src="bootstrap.min.js"></script> <script src="script.js"></script>
 </body>
 </html>

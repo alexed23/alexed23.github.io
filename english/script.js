@@ -76,12 +76,27 @@ $(document).ready(function() {
         if (($("#audio_10").val()) === 'correct') {
             summary++;
         };
-        if (summary >= 20 && summary <= 25) {
+        if (($("#video_1").val()) === 'correct') {
+            summary++;
+        };
+        if (($("#avideo_2").val()) === 'correct') {
+            summary++;
+        };
+        if (($("#video_3").val()) === 'correct') {
+            summary++;
+        };
+        if (($("#video_4").val()) === 'correct') {
+            summary++;
+        };
+        if (($("#video_5").val()) === 'correct') {
+            summary++;
+        };
+        if (summary >= 25 && summary <= 30) {
             $(".good").hide();
             $(".average").hide();
             $(".excellent").show();
             $(".bad").hide();
-            var percent = summary / 0.25;
+            var percent = summary / 0.30;
             $(".progress-bar").attr("style", "width:" + percent +
                 "%");
             $(".result").css("display", "block");
@@ -89,13 +104,13 @@ $(document).ready(function() {
                 scrollTop: $(document).height()
             }, 'slow');
             $('.score').html("<h1>Your score: " + summary +
-                "/25</h1>");
-        } else if (summary >= 15 && summary <= 19) {
+                "/30</h1>");
+        } else if (summary >= 20 && summary <= 24) {
             $(".good").show();
             $(".average").hide();
             $(".excellent").hide();
             $(".bad").hide();
-            var percent = summary / 0.25;
+            var percent = summary / 0.30;
             $(".progress-bar").attr("style", "width:" + percent +
                 "%");
             $(".result").css("display", "block");
@@ -103,13 +118,13 @@ $(document).ready(function() {
                 scrollTop: $(document).height()
             }, 'slow');
             $('.score').html("<h1>Your score: " + summary +
-                "/25</h1>");
-        } else if (summary >= 10 && summary <= 14) {
+                "/30</h1>");
+        } else if (summary >= 10 && summary <= 19) {
             $(".good").hide();
             $(".average").show();
             $(".excellent").hide();
             $(".bad").hide();
-            var percent = summary / 0.25;
+            var percent = summary / 0.30;
             $(".progress-bar").attr("style", "width:" + percent +
                 "%");
             $(".result").css("display", "block");
@@ -117,13 +132,13 @@ $(document).ready(function() {
                 scrollTop: $(document).height()
             }, 'slow');
             $('.score').html("<h1>Your score: " + summary +
-                "/25</h1>");
+                "/30</h1>");
         } else if (summary >= 0 && summary <= 9) {
             $(".good").hide();
             $(".average").hide();
             $(".excellent").hide();
             $(".bad").show();
-            var percent = summary / 0.25;
+            var percent = summary / 0.30;
             $(".progress-bar").attr("style", "width:" + percent +
                 "%");
             $(".result").css("display", "block");
@@ -131,7 +146,7 @@ $(document).ready(function() {
                 scrollTop: $(document).height()
             }, 'slow');
             $('.score').html("<h1>Your score: " + summary +
-                "/25</h1>");
+                "/30</h1>");
         }
     });
 });
