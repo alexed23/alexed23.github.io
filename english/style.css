@@ -55,6 +55,7 @@ border-radius:0;
     opacity:0.9;
     transition: opacity 0.1s;
     float:left;
+    width:27%;
 }
 
 .audio {
@@ -65,6 +66,7 @@ padding:15px;
 opacity:0.9;
 transition: opacity 0.1s;
 float:right;
+width:31%;
 }
 .video {
 margin-right:10px;
@@ -73,8 +75,8 @@ position:absolute;
 padding:15px;
 opacity:0.9;
 transition: opacity 0.1s;
-margin-left:27%;
-width:37%;
+margin-left:30%;
+width:36%;
 
 }
 
