@@ -202,28 +202,32 @@ span.glyphicon.glyphicon-chevron-right:before {
   background-image: url('../img/iphone.png');
   display:inline-block;
   width:450px;
-  height:530px;
+  height:500px;
   background-size:contain;
   background-repeat: no-repeat;
 
   position: absolute;
   bottom:0;
-  right:-50px;
+  right:-10%;
 
 }
 
 
-.featuresHeader {
+.featuresHeader, .screenshotsHeader {
  font-family: 'Open Sans', sans-serif;
  font-weight:700;
  font-size: 190%;
  text-align: center;
- margin-top:100px;
+ margin-top:10%;
  margin-bottom: 0;
  color:#282528;
 }
 
-.featuresHeader:before {
+.screenshotsHeader {
+   margin-top:20%;
+}
+
+.featuresHeader:before, .screenshotsHeader:before  {
   content: "";  
   display:inline-block;
   width:5.1282051282051282%;
@@ -233,7 +237,7 @@ span.glyphicon.glyphicon-chevron-right:before {
   margin-right:2.5%; 
 }
 
-.featuresHeader:after {
+.featuresHeader:after, .screenshotsHeader:after {
   content: "";  
   display:inline-block;
   width:5.1282051282051282%;
@@ -242,6 +246,8 @@ span.glyphicon.glyphicon-chevron-right:before {
   background-color: #b7babe; 
   margin-left:2.5%; 
 }
+
+
 
 .featuresDesc {
  font-family: 'Open Sans', sans-serif;
@@ -333,7 +339,7 @@ span, .reviewSection {
 }
 
 .pullDown {
-  margin-top:30%;
+  margin-top:10%;
 }
 
 .iphoneDescription img {
@@ -361,4 +367,17 @@ span {
 .feature:hover {
   background-color:#fefce9;
   cursor: default;
+}
+
+.left {
+  padding-right:0;
+}
+
+.right {
+  padding-left:0;
+}
+
+.middle {
+  padding-left: 0;
+  padding-right:0;
 }
