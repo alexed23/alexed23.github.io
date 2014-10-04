@@ -168,7 +168,7 @@ padding-left:15px;
 
 .iphone {
   position:absolute;
-  background-image: url('img/iphone.png');
+  background-image: url('..img/iphone.png');
   display:block;
   width:397.5px;
   height:481.5px;
@@ -179,3 +179,25 @@ padding-left:15px;
 bottom:0;
 right:120px;
 }
+
+
+.features {
+   font-family: 'Open Sans', sans-serif;
+font-weight:700;
+font-size: 230%;
+text-align: center;
+margin-top:100px;
+}
+
+.featuresDesc {
+     font-family: 'Open Sans', sans-serif;
+font-weight:400;
+font-size: 130%;
+text-align: center;
+margin-top:70px;
+}
+
+.static {
+  position:static;
+}
+
