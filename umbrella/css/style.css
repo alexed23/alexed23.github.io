@@ -1,5 +1,5 @@
 body {
-  min-width:1000px;
+  min-width:1110px;
 }
 
 span.glyphicon.glyphicon-chevron-left {
@@ -272,12 +272,35 @@ margin-right:auto;
   top:0;
 }
 
-[data-icon]:before {
+.settings, .timer, .music, .person, .plane, .camera {
   font-family: 'Pe-icon-7-stroke'; /* BYO icon font, mapped smartly */
-  content: attr(data-icon);
-  font-size: 200%;
+font-size: 200%;
   color:#bdbdbd;
-  margin-right:150%;
+  transition: color 0.3s ease;
+}
+
+.settings:before {
+  content: '\e60a';
+}
+
+.timer:before {
+  content: '\e60b';
+}
+
+.music:before {
+  content: '\e630';
+}
+
+.person:before {
+  content: '\e605';
+}
+
+.plane:before {
+  content: '\e629';
+}
+
+.camera:before {
+  content: '\e66f';
 }
 
 .features {
@@ -287,13 +310,13 @@ margin-right:auto;
 .header {
  font-family: 'Open Sans', sans-serif;
  font-weight:700;
- font-size: 80%; 
+ font-size: 82%; 
  }
 
 .review {
  font-family: 'Open Sans', sans-serif;
  font-weight:400;
- font-size: 80%;
+ font-size: 82%;
 
 
 }
@@ -305,15 +328,37 @@ span, .reviewSection {
 }
 
 .reviewSection {
-  width:76%;
+  width:87%;
+  padding-left:5%;
 }
 
-.timer, .music {
+.pullDown {
   margin-top:30%;
 }
 
 .iphoneDescription img {
-  width:80%;
+  width:100%;
+
 }
 
+.iphoneDescription {
+  text-align: center;
+}
 
+.description {
+  margin-top:7%;
+}
+
+span {
+  margin-top:-2%;
+}
+
+.feature {
+  padding:10px;
+  transition: background-color 0.3s ease;
+}
+
+.feature:hover {
+  background-color:#fefce9;
+  cursor: default;
+}
