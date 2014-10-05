@@ -1,3 +1,9 @@
+html,body
+{
+  overflow-x: hidden; 
+}
+
+
 body {
   min-width:1280px;
 }
@@ -38,7 +44,7 @@ span.glyphicon.glyphicon-chevron-right:before {
   transition: opacity 0.2s ease;
 }
 
-.item img {
+.awesomeCarousel img {
   width:100%;
 }
 
@@ -223,9 +229,7 @@ span.glyphicon.glyphicon-chevron-right:before {
  color:#282528;
 }
 
-.screenshotsHeader {
-   margin-top:20%;
-}
+
 
 .featuresHeader:before, .screenshotsHeader:before  {
   content: "";  
@@ -256,8 +260,8 @@ span.glyphicon.glyphicon-chevron-right:before {
  text-align: center;
  margin-top:90px;
  width:79.758%;
-margin-left:auto;
-margin-right:auto;
+ margin-left:auto;
+ margin-right:auto;
 
 
 }
@@ -280,7 +284,7 @@ margin-right:auto;
 
 .settings, .timer, .music, .person, .plane, .camera {
   font-family: 'Pe-icon-7-stroke'; /* BYO icon font, mapped smartly */
-font-size: 200%;
+  font-size: 200%;
   color:#bdbdbd;
   transition: color 0.3s ease;
 }
@@ -317,7 +321,7 @@ font-size: 200%;
  font-family: 'Open Sans', sans-serif;
  font-weight:700;
  font-size: 82%; 
- }
+}
 
 .review {
  font-family: 'Open Sans', sans-serif;
@@ -380,4 +384,117 @@ span {
 .middle {
   padding-left: 0;
   padding-right:0;
+}
+
+.wrapper {
+  margin-top:5%;
+  background-color:#fafafa;
+}
+
+.screenshotsHeader {
+ margin-top:10%;
+}
+/*
+.slick-prev {
+  left:-14%;
+
+}
+
+.slick-next {
+  right:-14%;
+}
+
+.slick-prev, .slick-next {
+  z-index:9999;
+}
+*/
+.yellow {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(../img/jumbotron_yellow.png);
+  width:100%;
+  height:700px;
+}
+
+.red {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(../img/jumbotron_red.png);
+  width:100%;
+  height:700px;
+}
+
+.blue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(../img/jumbotron_blue.png);
+  width:100%;
+  height:700px;
+}
+
+
+.darkblue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(../img/jumbotron_darkblue.png);
+  width:100%;
+  height:700px;
+}
+
+
+.transparentLeft {
+  top:0;
+  position: absolute;
+  height: 700px;
+  width:8%;
+  left:5%;
+}
+
+.transparentRight {
+  top:0;
+  position: absolute;
+  height: 700px;
+  width:8%;
+  right:5%;
+
+}
+
+.previous {
+  position: absolute;
+  font-family: 'Pe-icon-7-stroke'; /* BYO icon font, mapped smartly */
+  font-size: 450%;
+  color:white;
+  opacity:0.5;
+  top:50%;
+  margin-top:-31.5px;
+  transition: opacity 0.3s ease;
+}
+
+.previous:before {
+  content: '\e687';
+
+}
+
+.previous:hover{
+  opacity:0.7;
+}
+
+.next {
+  position: absolute;
+  font-family: 'Pe-icon-7-stroke'; /* BYO icon font, mapped smartly */
+  font-size: 450%;
+  color:white;
+  opacity:0.7;
+  top:50%;
+  margin-top:-31.5px;
+right:0;
+transition: opacity 0.3s ease;
+}
+
+.next:before {
+  content: '\e685';
+}
+
+.next:hover{
+  opacity:1;
 }
