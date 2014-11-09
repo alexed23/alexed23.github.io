@@ -1,17 +1,21 @@
+html { 
+
+  overflow-x: hidden;
+  min-width: 1000px;
+
+}
+
 html, body { 
   height: 100%; 
 }
 
-.awesomeCarousel img {
-  width:100%;
-}
 
 .headerPanel {
   margin-left: -3.75%;
   margin-right: -3.75%;
   height:60px;
   background-color:white;
-box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.22);
 }
 
 .menu {
@@ -22,11 +26,6 @@ box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.22);
   margin-right:3.75%;
 }
 
-.black {
-  height:100px;
-  width:100%;
-  background-color: black;
-}
 
 .menu li {
   text-transform: uppercase;
@@ -62,20 +61,20 @@ box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.22);
   line-height: 60px;
   float:left;
   margin-left:3.75%;
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .umbrellaPic:before {
   content: '\e608';
 }
 
- a:hover {
+a:hover {
  text-decoration: none;
  color:inherit;
 }
 
 a {
-    color:black;
+  color:black;
 }
 
 .umbrellaText {
@@ -140,18 +139,18 @@ a {
 
 
 .download, .viewGallery {
-    width:176px;
-    height:56px;
-    display:inline-block;
-    margin-top:7%;
-    background-color: transparent;
-    border: solid 2px #282528;
-    transition: border-color 0.3s ease-in-out; 
-    position: relative;
+  width:176px;
+  height:56px;
+  display:inline-block;
+  margin-top:40px;
+  background-color: transparent;
+  border: solid 2px #282528;
+  transition: border-color 0.3s ease-in-out; 
+  position: relative;
 }
 
 .viewGallery { 
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .downloadPic, .galleryPic  {
@@ -171,108 +170,93 @@ a {
 }
 
 .downloadText, .galleryText {
-    font-family: 'Open Sans', sans-serif;
-    color:  #282528;
-    font-weight: 600;
-    font-size: 135%;
-    transition: color 0.3s ease-in-out; 
-    margin-left:50px;
+  font-family: 'Open Sans', sans-serif;
+  color:  #282528;
+  font-weight: 600;
+  font-size: 135%;
+  transition: color 0.3s ease-in-out; 
+  margin-left:50px;
 }
 
 .viewGallery span, .download span {
-     position: absolute;
-    top:50%;
-    transform: translateY(-50%);   
+ position: absolute;
+ top:50%;
+ transform: translateY(-50%);   
 }
 .viewGallery:hover, .download:hover {
-    border-color:white;
+  border-color:white;
 }
 
 .download:hover span, .viewGallery:hover span{
-    color:white;
+  color:white;
 }
 
 
-
+.awesomeCarousel {
+  margin-bottom: 0;
+}
 
 .iphone {
 
   background-image: url('../img/iphone.png');
-  display:inline-block;
-  width:450px;
-  height:500px;
+  height:513.6px;
+  width:411px;
   background-size:contain;
   background-repeat: no-repeat;
-
   position: absolute;
-  bottom:0;
-  right:-10%;
-
+  bottom: 0;
+  right:-7%;
 }
 
 
-.featuresHeader, .screenshotsHeader {
+.header {
  font-family: 'Open Sans', sans-serif;
  font-weight:700;
  font-size: 190%;
  text-align: center;
- margin-top:10%;
+ margin-top:80px;
  margin-bottom: 0;
  color:#282528;
+ text-transform: uppercase;
 }
 
 
 
-.featuresHeader:before, .screenshotsHeader:before  {
+.header:before, .header:after{
   content: "";  
   display:inline-block;
   width:5.1282051282051282%;
   height:1px;
   vertical-align: middle;
-  background-color: #282528; 
+  background-color: rgba(83, 91, 100, 0.4); 
   opacity:0.4;
   margin-right:2.5%; 
 }
 
-.featuresHeader:after, .screenshotsHeader:after {
-  content: "";  
-  display:inline-block;
-  width:5.1282051282051282%;
-  height:1px;
-  vertical-align: middle;
-  background-color: #282528; 
-  opacity:0.4;
+.header:after {
+  margin-right:0; 
   margin-left:2.5%; 
 }
 
 
 
-.featuresDesc {
+.description {
  font-family: 'Open Sans', sans-serif;
  font-weight:400;
  font-size: 110%;
  text-align: center;
- margin-top:90px;
+ margin-top:70px;
  width:79.758%;
  margin-left:auto;
  margin-right:auto;
  color:#282528;
-
 }
 
-.container.static {
-  position:static;
-}
-
-
-.container.title, .row {
-  height:100%;
-}
 
 .feature span {
   font-family: 'Pe-icon-7-stroke';
   font-size: 200%;
-  color:#bdbdbd;
+  color:rgba(40, 37, 40, 0.4);
   transition: color 0.3s ease-in-out; 
 }
 
@@ -304,18 +288,15 @@ a {
   margin-top:10%;
 }
 
-.header {
+.reviewSection .title, .reviewSection .review {
  font-family: 'Open Sans', sans-serif;
  font-weight:700;
- font-size: 82%; 
+ font-size: 82%;
+ color:#282528; 
 }
 
-.review {
- font-family: 'Open Sans', sans-serif;
+.reviewSection .review {
  font-weight:400;
- font-size: 82%;
-
-
 }
 
 
@@ -336,16 +317,8 @@ a {
   margin-top:10%;
 }
 
-.iphoneDescription img {
-  width:100%;
 
-}
-
-.iphoneDescription {
-  text-align: center;
-}
-
-.description {
+.features .block {
   margin-top:7%;
 }
 
@@ -356,12 +329,21 @@ a {
 }
 
 .feature:hover {
-  background-color:#fefce9;
+  background-color: rgba(247, 227, 39, 0.1);
   cursor: default;
 }
 
 .feature:hover span {
-  color:black;
+  color:#282528;
+}
+
+.iphoneBlank {
+  width: 100%;
+  height: 550px;
+  background-image:url(../img/iphone_blank.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .left {
@@ -378,27 +360,10 @@ a {
 }
 
 .wrapper {
-  margin-top:5%;
-  background-color:#fafafa;
+  background-color:rgba(83, 91, 100, 0.03);
 }
 
-.screenshotsHeader {
- margin-top:10%;
-}
-/*
-.slick-prev {
-  left:-14%;
 
-}
-
-.slick-next {
-  right:-14%;
-}
-
-.slick-prev, .slick-next {
-  z-index:9999;
-}
-*/
 .yellow {
   background-size: cover;
   background-repeat: no-repeat;
@@ -448,9 +413,8 @@ a {
   height: 700px;
   width:8%;
   right:5%;
-
-
 }
+
 
 .previous {
   position: absolute;
@@ -462,6 +426,10 @@ a {
   margin-top:-31.5px;
   transition: opacity 0.3s ease-in-out;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -485,6 +453,10 @@ a {
   right:0;
   transition: opacity 0.3s ease-in-out;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   cursor: pointer;
 
 }
@@ -498,62 +470,51 @@ a {
 }
 
 .awesomeCarousel .slick-dots {
-  position:absolute;
-  top:650px;
+  bottom:15px;
 }
 
 
-.awesomeCarousel .slick-dots li.slick-active button:before { /* style of currently active element */
-  content:"" !important;
-  border: 2px solid white;
-  width:12px !important;
-  height:12px !important;
-  border-radius: 6px;
-  opacity:1 !important;
-  background-color: transparent !important;
-  /*margin-top:-6.25px;*/
-  position: absolute;
-  top:50%;
-  margin-top:-6px;
+.awesomeCarousel li {
+  margin: 0 2px;
+}
+
+.awesomeCarousel button {
+  padding: 0 !important;
+}
+
+.awesomeCarousel .slick-dots li.slick-active,
+.awesomeCarousel .slick-dots li.slick-active button,
+.awesomeCarousel .slick-dots li.slick-active button:before,
+.awesomeCarousel .slick-dots li,
+.awesomeCarousel .slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
+
+
+.awesomeCarousel .slick-dots li button:before {
+  width: 8px;
+  height: 8px;
   left:50%;
-margin-left: -6px;
+  top:50%;
+  transform: translate(-50%, -50%)
 }
 
-
-.awesomeCarousel .slick-dots li button:before { /* style of unactive elements */
-  position: absolute;
-  content:"" !important;
-  background-color: white !important;
-  width:10px !important;
-  height:10px !important;
-  border-radius: 5px;
-  opacity:1 !important;
-top:50%;
-margin-top:-5px;
-left:50%;
-margin-left: -5px;
-}
-
-
-.awesomeCarousel .slick-dots li button { /* container for unactive elements */
-  width:10px !important;
-  height:10px !important; 
-  position:relative;
+.awesomeCarousel .slick-dots li.slick-active button:before {
+  border-radius: 6px;
+  content:'';
+  border: 2px solid white;
+  background-color: transparent;
+  opacity: 1;
 
 }
 
-.awesomeCarousel .slick-dots .slick-active button { /* container for active element */
-  width:12px !important;
-  height:12px !important;
-  position:relative;
-
+.awesomeCarousel .slick-dots li button:before {
+  border-radius: 4px;
+  content:'';
+  background-color:white;
+  opacity: 1;
 }
-.awesomeCarousel .slick-dots li {
-  margin:3px;
-  width:12px;
-  height:12px;
-}
-
 
 .screenshotIphone {
   background-image: url('../img/screenshot.png');
@@ -564,28 +525,171 @@ margin-left: -5px;
   background-size: contain;
 }
 
-/*.screenshotCarousel .slick-slide {
-  opacity:0.;
-  transition: opacity 1s ease-in-out;
-}*/
+.screenshot2 {
+  background-image: url('http://cs311120.vk.me/v311120214/1e7d/6X3inhLYSus.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
 
+.screenshot3 {
+  background-image: url('http://cs304610.vk.me/v304610584/767c/TU4yefeKBtU.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
 
+.screenshot4 {
+  background-image: url('http://radio-weblogs.com/0100059/myImages/Google/googleBoxExample.png');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot5 {
+  background-image: url('http://blogspot.fluidnewmedia.com/wp-content/uploads/2009/04/emulator.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot6 {
+  background-image: url('https://www.berrymobile.jp/belgium/n_mobi/images/xperia_s_b.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot7 {
+  background-image: url('http://www.androidcentral.com/sites/androidcentral.com/files/postimages/79186/htc_desire_hd.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot8 {
+  background-image: url('http://www.men-at-work.de/html/tl_files/standard/images/brandneu/stiegelmeyer.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot9 {
+  background-image: url('https://lh4.googleusercontent.com/-cGq_g1sn_xs/Um_wV8spgaI/AAAAAAAAJOo/T0YUkj66wY0/s360/068AC03_b.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot10 {
+  background-image: url('http://md1.libe.com/photo/578988-tel-2.jpg?modified_at=1368787673');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot11 {
+  background-image: url('http://news.techclap.com/wp-content/uploads/2011/02/Fly-b450.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
+
+.screenshot12 {
+  background-image: url('http://3.bp.blogspot.com/-yQZoOfDsKH4/TtUKaYr8LPI/AAAAAAAAAIA/4zSLYAsM5uY/s1600/iphone-padlock.jpg');
+  background-repeat: no-repeat;
+  width:200px !important;
+  height:360px;
+  margin:auto;
+  background-size: contain;
+}
 .screenshotCarousel {
   margin-top:100px;
+}
+
+.screenshotCarousel .slick-dots{
+  bottom:-10px;
+}
+
+
+.screenshotCarousel li {
+  margin: 0 2px;
+}
+
+.screenshotCarousel button {
+  padding: 0 !important;
+}
+
+.screenshotCarousel .slick-dots li.slick-active,
+.screenshotCarousel .slick-dots li.slick-active button,
+.screenshotCarousel .slick-dots li.slick-active button:before,
+.screenshotCarousel .slick-dots li,
+.screenshotCarousel .slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
+
+
+.screenshotCarousel .slick-dots li button:before {
+  width: 8px;
+  height: 8px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%)
+}
+
+.screenshotCarousel .slick-dots li.slick-active button:before {
+  border-radius: 6px;
+  content:'';
+  border: 2px solid black;
+  background-color: transparent;
+  opacity: 1;
+
+}
+
+.screenshotCarousel .slick-dots li button:before {
+  border-radius: 4px;
+  content:'';
+  background-color:rgba(40, 37, 40, 0.2);
+  opacity: 1;
 }
 
 .showReel img {
   width:100%;
 }
 
-.square {
-  margin-top:100px;
+figure {
   width:200px;
   height:200px;
   background-color:#e9eaeb;
+  overflow: hidden;
 }
 
-.squareName {
+.row.people{
+  margin-top:80px;
+}
+
+.name {
   margin-top:1em;
   font-family: 'Open Sans', sans-serif;
   font-weight:700;
@@ -593,15 +697,114 @@ margin-left: -5px;
   color:#282528;
 }
 
-.squarePosition {
+.position {
   margin-top:0.1em;
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
   font-size:85%; 
   color:#646464;
-  margin-bottom:150px;
 }
 
+
+.caption {
+
+  width: 200px;
+  height: 200px;
+  background-color: rgba(248, 229, 20, 0.9);
+  transform: translate3d(0,100%,0);
+  -webkit-transition: transform .3s ease, opacity .3s ease;
+  -o-transition: transform .3s ease, opacity .3s ease;
+  transition: transform .3s ease, opacity .3s ease;
+  opacity:0;
+}
+
+.videoWrapper {
+  position:relative;
+}
+
+.playIcon {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-image: url(../img/playIcon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 37px;
+  height: 43px;
+  margin-left: 8px;
+  margin-top: -3px;
+  z-index:100;
+  display:none;
+}
+
+.caption span {
+  display: block;
+  padding:10px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#282528;
+  font-size: 90%;
+}
+
+figure:hover .caption {
+
+  transform: translate3d(0,0,0);
+  opacity:1;
+}
+
+.social {
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.facebook, .twitter, .google {
+  height: 38px;
+  width:38px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display:inline-block;
+  margin:1px;
+  line-height: 38px;
+
+}
+
+.facebook i, .twitter i, .google i {
+  color:#ffffff;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.facebook:hover i {
+  color:#3b5998;
+}
+
+.twitter:hover i {
+  color:#55acee;
+}
+
+.google:hover i {
+  color:#dd4b39;
+}
+
+.quotesContainer {
+  margin-top:50px;
+}
+
+.peopleContainer {
+  padding-bottom: 120px;
+}
 .quote {
   font-family: 'Georgia', sans-serif;
   font-weight:400;
@@ -611,23 +814,21 @@ margin-left: -5px;
 }
 
 .quoteText{
-  margin-top: -150px;
-   font-family: 'Open Sans', sans-serif;
- font-weight:400;
- font-size: 110%;
- text-align: center;
- width:79.758%;
- margin-left:auto;
- margin-right:auto;
- color:#282528;
+  margin: -120px auto 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size: 110%;
+  text-align: center;
+  width:62%;
+  color:#282528;
 }
 
 .quotePhoto {
-  margin-top: 3em !important;
-  height:150px;
-  width:150px;
-  background-color: gray;
-  margin:auto;
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  border:1px solid #f7e327;
+  margin:0 auto;
 }
 
 .quoteName {
@@ -649,7 +850,53 @@ margin-left: -5px;
 }
 
 
-.featuredInWrapper {
+.quoteCarousel .slick-dots {
+  top:560px;
+}
+
+.quoteCarousel li {
+  margin: 0 2px;
+}
+
+.quoteCarousel button {
+  padding: 0 !important;
+}
+
+.quoteCarousel .slick-dots li.slick-active,
+.quoteCarousel .slick-dots li.slick-active button,
+.quoteCarousel .slick-dots li.slick-active button:before,
+.quoteCarousel .slick-dots li,
+.quoteCarousel .slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
+
+
+.quoteCarousel .slick-dots li button:before {
+  width: 8px;
+  height: 8px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%)
+}
+
+.quoteCarousel .slick-dots li.slick-active button:before {
+  border-radius: 6px;
+  content:'';
+  border: 2px solid black;
+  background-color: transparent;
+  opacity: 1;
+
+}
+
+.quoteCarousel .slick-dots li button:before {
+  border-radius: 4px;
+  content:'';
+  background-color:rgba(40, 37, 40, 0.2);
+  opacity: 1;
+}
+
+.featuredInWrapper { 
   margin-top:10em;
   width:100%;
   height:500px;
@@ -657,64 +904,95 @@ margin-left: -5px;
 }
 
 
-
-.theVerge, .mashable, .TNW, .behance, .dribbble {
-    display:inline-block;
-width:15%;
-    background-size: contain;
-  height:45px;
-  background-repeat: no-repeat;
-  margin-right:6.25%;
-opacity:0.2;
-position:relative;
-
-
+ul.images {
+  width: 100%;
+  margin:0;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  display:table;
+  padding: 0 15px;
+  left:0;
 }
 
-.theVerge {
+ul.images li {
+  display:table-cell;
+  vertical-align: middle;
+}
 
-    background-image: url(../img/theVerge_original.png);
-    
-    
-  }
+ul.images li {
+  width:20%;
+}
+
+ul.images li div {
+width:100%;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+opacity: 0.2;
+}
+
+
+.theVerge {
+  background-image: url(../img/theVerge_original.png);
+  height: 22px;
+}
+
+.theVerge:hover {
+  background-image: url(../img/theVerge_white.png);
+}
 
 .mashable {
   background-image: url(../img/mashable_original.png);
-margin-right:8.75%;
+  height: 29px;
 }
 
-.TNW {
-    background-image: url(../img/TNW_original.png);
-    width:10%;
-    margin-right:8.75%;
+.mashable:hover {
+  background-image: url(../img/mashable_white.png);
 }
 
+.tnw {
+  background-image: url(../img/TNW_original.png);
+  height: 34px;
+}
+
+.tnw:hover {
+  background-image: url(../img/TNW_white.png);
+}
 
 .behance {
-    background-image: url(../img/behance_original.png);
-
+  background-image: url(../img/behance_original.png);
+  height: 27px;
 }
 
+.behance:hover {
+  background-image: url(../img/behance_white.png);
+}
 
 .dribbble {
-    background-image: url(../img/dribbble_original.png);
-    margin-right:0;
-
-
+  background-image: url(../img/dribbble_original.png);
+  height: 30px;
 }
 
-.logos {
-top:50%;
-position: absolute;
-
+.dribbble:hover {
+  background-image: url(../img/dribbble_white.png);
 }
 
-.relative {
+ul.images li div:hover {
+  opacity:1;
+}
+
+.featuredIn {
+  height:100%;
   position: relative;
-  top:0;
 }
 
 
+.slick-slide {
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out; 
+}
 
 .headerSlides {
   position:absolute;
@@ -727,3 +1005,4 @@ position: absolute;
 .screenshotCarousel .slick-list {
   padding-bottom:100px;
 }
+
