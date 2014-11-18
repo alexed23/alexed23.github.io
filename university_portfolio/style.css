@@ -300,6 +300,10 @@ a {
 .clearfix:after {
     clear: both
 }
+
+body {
+    margin:0;
+}
 @media print {
     * {
         background: 0 0!important;
