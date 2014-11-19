@@ -1,0 +1,124 @@
+.mark {
+	display: none;
+	background-image: url(http://ict.herzen.spb.ru/wp-content/uploads/2014/05/biknot11.jpg);
+	background-size: 160%;
+	background-position: 52% 10%;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.container {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+
+.gos {
+	display: inline-block;
+}
+
+.display-skeleton:not(:first-child):not(:last-child) {
+	margin-left: -70px;
+}
+
+.number {
+	font-size: 1000%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.display-skeleton {
+	display: inline-block;
+	visibility: hidden;
+}
+
+.display {
+	visibility: visible;
+}
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes bounceInDown {
+	0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -3000px, 0);
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0);
+	}
+
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes bounceInDown {
+	0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -3000px, 0);
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0);
+	}
+
+	100% {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.bounceInDown {
+	-webkit-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+}
