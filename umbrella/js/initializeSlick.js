@@ -3,18 +3,19 @@ $(document).ready(function(){
 		prevArrow:$('.previous'),
 		nextArrow:$('.next'),
 		dots:true,
-		draggable:false,
-		fade:true
+		fade:true,
+		draggable:false
 	});
+
+
 	$('.screenshotCarousel').slick({
 		infinite: true,
 		slidesToShow: 5,
-		slidesToScroll: 3,
+		slidesToScroll: 5,
 		touchThreshold:20,
 		dots:true,
 		arrows:false,
 		speed:600
-
 	});
 
 

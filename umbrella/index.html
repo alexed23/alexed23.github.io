@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Umbrella</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/>
@@ -12,10 +11,13 @@
     <link rel="stylesheet" href="css/helper.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!-- NAV PANEL -->
-    <div class="container" style="position:absolute; top:3%; left:50%; transform: translateX(-50%); z-index:999"> 
+    <div class="container header-container"> 
       <div class="headerPanel">
         <ul class="menu">
           <li><a href="#">home</a></li>
@@ -33,8 +35,7 @@
     <!-- /NAV PANEL -->
 
     <div class="awesomeCarousel"> <!-- CAROUSEL -->
-      <div class="firstSlide">   
-        <div class="yellow"></div>     
+      <div class="firstSlide yellow">      
         <div class="container headerSlides">
           <span class="regularTitle">Introducing</span>&nbsp;&nbsp;&nbsp;<span class="boldTitle">Umbrella</span>
           <br>
@@ -52,8 +53,7 @@
         </div>
       </div>
 
-      <div class="secondSlide">
-        <div class="red"></div>      
+      <div class="secondSlide red">     
         <div class="container headerSlides">
           <span class="regularTitle">Introducing</span>&nbsp;&nbsp;&nbsp;<span class="boldTitle">Umbrella</span>
           <br>
@@ -71,8 +71,7 @@
         </div>
       </div>
 
-      <div class="thirdSlide">    
-        <div class="blue"></div>  
+      <div class="thirdSlide blue">    
         <div class="container headerSlides">
           <span class="regularTitle">Introducing</span>&nbsp;&nbsp;&nbsp;<span class="boldTitle">Umbrella</span>
           <br>
@@ -91,8 +90,7 @@
       </div>
 
 
-      <div class="fourthSlide">    
-        <div class="darkblue"></div>      
+      <div class="fourthSlide darkblue">        
         <div class="container headerSlides">
           <span class="regularTitle">Introducing</span>&nbsp;&nbsp;&nbsp;<span class="boldTitle">Umbrella</span>
           <br>
@@ -124,7 +122,7 @@
 
 
       <div class="features">
-        <div class="col-xs-4 block left">
+        <div class="col-xs-4 block">
 
           <div class="feature">
             <span aria-hidden="true" class="settings"></span>
@@ -149,10 +147,10 @@
       </div> 
 
     </div>
-    <div class="col-xs-4 middle">
-      <div class="iphoneBlank"></div>
+    <div class="col-xs-4">
+      <img src="img/iphone_blank.png" class="iphoneBlank" alt="">
     </div>
-    <div class="col-xs-4 block right">
+    <div class="col-xs-4 block">
       <div class="feature">
         <span aria-hidden="true" class="person"></span>
         <div class="reviewSection">
@@ -183,50 +181,40 @@
     <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque   laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
   </div>
   <div class="screenshotCarousel">
-    <!--<div class="1"><div class="screenshotIphone"></div></div>
-    <div class="2"><div class="screenshot2"></div></div>
-    <div class="3"><div class="screenshot3"></div></div>
-    <div class="4"><div class="screenshot4"></div></div>
-    <div class="5"><div class="screenshot5"></div></div>
-    <div class="6"><div class="screenshot6"></div></div>
-    <div class="7"><div class="screenshot7"></div></div>
-    <div class="8"><div class="screenshot8"></div></div>
-    <div class="9"><div class="screenshot9"></div></div>
-    <div class="10"><div class="screenshot10"></div></div>
-    <div class="11"><div class="screenshot11"></div></div>
-    <div class="12"><div class="screenshot12"></div></div>-->
-    <div class="1"><div class="screenshotIphone"></div></div>
-    <div class="2"><div class="screenshotIphone"></div></div>
-    <div class="3"><div class="screenshotIphone"></div></div>
-    <div class="4"><div class="screenshotIphone"></div></div>
-    <div class="5"><div class="screenshotIphone"></div></div>
-    <div class="6"><div class="screenshotIphone"></div></div>
-    <div class="7"><div class="screenshotIphone"></div></div>
-    <div class="8"><div class="screenshotIphone"></div></div>
-    <div class="9"><div class="screenshotIphone"></div></div>
-    <div class="10"><div class="screenshotIphone"></div></div>
-    <div class="11"><div class="screenshotIphone"></div></div>
-    <div class="12"><div class="screenshotIphone"></div></div>
+    <div class="_1"><div class="screenshotIphone opacity"></div></div>
+    <div class="_2"><div class="screenshotIphone"></div></div>
+    <div class="_3"><div class="screenshotIphone"></div></div>
+    <div class="_4"><div class="screenshotIphone"></div></div>
+    <div class="_5"><div class="screenshotIphone opacity"></div></div>
+    <div class="_6"><div class="screenshotIphone opacity"></div></div>
+    <div class="_7"><div class="screenshotIphone"></div></div>
+    <div class="_8"><div class="screenshotIphone"></div></div>
+    <div class="_9"><div class="screenshotIphone"></div></div>
+    <div class="_10"><div class="screenshotIphone opacity"></div></div>
+    <div class="_11"><div class="screenshotIphone opacity"></div></div>
+    <div class="_12"><div class="screenshotIphone"></div></div>
+    <div class="_13"><div class="screenshotIphone"></div></div>
+    <div class="_14"><div class="screenshotIphone"></div></div>
+    <div class="_15"><div class="screenshotIphone opacity"></div></div>
+    <div class="_16"><div class="screenshotIphone opacity"></div></div>
+    <div class="_17"><div class="screenshotIphone"></div></div>
+    <div class="_18"><div class="screenshotIphone"></div></div>
+    <div class="_19"><div class="screenshotIphone"></div></div>
+    <div class="_20"><div class="screenshotIphone opacity"></div></div>
   </div>
-  <!--<div class="showReel"><img src="img/showReel.png" alt=""></div>-->
-  <!--<div class="videoWrapper">
-    <video width="100%" poster="img/showReel.png" controls="true">
-      <source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm">
-      </video>
-      <div class="controls">
-        <div class="playIcon"></div>
-      </div>
-    </div>-->
-    <div class="container peopleContainer">
 
-      <p class="header">People Behind The App</p>
+  <img class="showReel" src="img/showReel.png" alt="">
 
-      <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+  <div class="container peopleContainer">
 
+    <p class="header">People Behind The App</p>
 
-      <div class="row people">
-        <div class="col-xs-3">
-          <figure class="john">
+    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+    <div class="row people">
+      <div class="col-xs-3">
+        <figure>
+          <div class="john figure">
             <div class="caption">
               <span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
               <div class="social">
@@ -235,16 +223,19 @@
                 <a href="#"><div class="google"><i class="fa fa-google-plus fa-lg"></i></div></a>
               </div>
             </div>
-          </figure>
+          </div>
+
           <figcaption>
             <div class="name">Jonh Doe eh</div>
             <div class="position">Lead Designer</div>
           </figcaption>
-        </div>
+        </figure>
+      </div>
 
 
-        <div class="col-xs-3">
-          <figure class="amanda">
+      <div class="col-xs-3">
+        <figure>
+          <div class="amanda figure">
             <div class="caption">
               <span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
               <div class="social">
@@ -253,16 +244,21 @@
                 <a href="#"><div class="google"><i class="fa fa-google-plus fa-lg"></i></div></a>
               </div>
             </div>
-          </figure>
+
+          </div>
+
+
           <figcaption>
             <div class="name">Amanda Fenrnicas</div>
             <div class="position">Lead Developer</div>
           </figcaption>
-        </div>
+        </figure>
+      </div>
 
 
-        <div class="col-xs-3">
-          <figure class="hamberg">
+      <div class="col-xs-3">
+        <figure>
+          <div class="hamberg figure">
             <div class="caption">
               <span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
               <div class="social">
@@ -271,15 +267,19 @@
                 <a href="#"><div class="google"><i class="fa fa-google-plus fa-lg"></i></div></a>
               </div>
             </div>
-          </figure>
+          </div>
+
+
           <figcaption>
             <div class="name">Hamberg Rodny</div>
             <div class="position">Artist</div>
           </figcaption>
-        </div>
+        </figure>
+      </div>
 
-        <div class="col-xs-3">
-          <figure class="jessica">
+      <div class="col-xs-3">
+        <figure>
+          <div class="jessica figure">
             <div class="caption">
               <span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
               <div class="social">
@@ -288,115 +288,114 @@
                 <a href="#"><div class="google"><i class="fa fa-google-plus fa-lg"></i></div></a>
               </div>
             </div>
-          </figure>
+          </div>
+
           <figcaption>
             <div class="name">Jessica Leonardo</div>
             <div class="position">Photographer</div>
           </figcaption>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="quotesContainer">
-    <div class="quoteCarousel">
-      <div class="firstSlide">
-        <div class="quote">“</div>
-        <div class="quoteText">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </div>
-        <div class="quotePhoto"></div>
-        <div class="quoteName">Robert Leonaro</div>
-        <div class="quotePosition">CEO at CUBEDES</div>
-      </div>
-
-      <div class="secondSlide">
-        <div class="quote">“</div>
-        <div class="quoteText">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </div>
-        <div class="quotePhoto"></div>
-        <div class="quoteName">Robert Leonaro</div>
-        <div class="quotePosition">CEO at CUBEDES</div>
-      </div>
-
-      <div class="thirdSlide">
-        <div class="quote">“</div>
-        <div class="quoteText">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </div>
-        <div class="quotePhoto"></div>
-        <div class="quoteName">Robert Leonaro</div>
-        <div class="quotePosition">CEO at CUBEDES</div>
-      </div>
-
-      <div class="fourthSlide">
-        <div class="quote">“</div>
-        <div class="quoteText">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </div>
-        <div class="quotePhoto"></div>
-        <div class="quoteName">Robert Leonaro</div>
-        <div class="quotePosition">CEO at CUBEDES</div>
+        </figure>
       </div>
     </div>
+
   </div>
-  <div class="featuredInWrapper">
-    <div class="container featuredIn">
-     <p class="header">Featured In</p>
+</div>
+<div class="quotesContainer">
+  <div class="quoteCarousel">
+    <div class="firstSlide">
+      <div class="quote">“</div>
+      <div class="quoteText">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </div>
+      <div class="quotePhoto"></div>
+      <div class="quoteName">Robert Leonaro</div>
+      <div class="quotePosition">CEO at CUBEDES</div>
+    </div>
+
+    <div class="secondSlide">
+      <div class="quote">“</div>
+      <div class="quoteText">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </div>
+      <div class="quotePhoto"></div>
+      <div class="quoteName">Robert Leonaro</div>
+      <div class="quotePosition">CEO at CUBEDES</div>
+    </div>
+
+    <div class="thirdSlide">
+      <div class="quote">“</div>
+      <div class="quoteText">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </div>
+      <div class="quotePhoto"></div>
+      <div class="quoteName">Robert Leonaro</div>
+      <div class="quotePosition">CEO at CUBEDES</div>
+    </div>
+
+    <div class="fourthSlide">
+      <div class="quote">“</div>
+      <div class="quoteText">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </div>
+      <div class="quotePhoto"></div>
+      <div class="quoteName">Robert Leonaro</div>
+      <div class="quotePosition">CEO at CUBEDES</div>
+    </div>
+  </div>
+</div>
+<div class="featuredInWrapper">
+  <div class="container featuredIn">
+   <p class="header">Featured In</p>
+   <div class="row">
      <ul class="images">
 
-      <li>
-        <a href="http://www.theverge.com/" target="_blank">
-          <div class="theVerge">
-            <img src="img/verge_original.png" style="position:absolute">
-            <img src="img/verge_white.png">
-          </div>
-        </a>
+      <li class="col-xs-5ths">
+        <div class="theVerge left">
+          <a href="http://www.theverge.com/" target="_blank">
+            <img src="img/theVerge_original.png" alt="">
+            <img src="img/theVerge_white.png" alt="">
+          </a>
+        </div>    
       </li>
 
-
-      <li>
-        <a href="http://www.mashable.com/" target="_blank"> 
-          <div class="mashable">
-            <img src="img/mashable_original.png" style="position:absolute">
-            <img src="img/mashable_white.png">
-          </div>
-        </a>
+      <li class="col-xs-5ths">        
+        <div class="mashable left">
+          <a href="http://www.mashable.com/" target="_blank"> 
+            <img src="img/mashable_original.png" alt="">
+            <img src="img/mashable_white.png" alt="">
+          </a>
+        </div>       
       </li>
 
-
-      <li>
-        <a href="http://www.thenextweb.com/" target="_blank"> 
-          <div class="tnw">
-            <img src="img/TNW_original.png" style="position:absolute">
-            <img src="img/TNW_white.png">
-          </div>
-        </a>
+      <li class="col-xs-5ths"> 
+        <div class="tnw center">
+          <a href="http://www.thenextweb.com/" target="_blank">
+            <img src="img/TNW_original.png" alt="">
+            <img src="img/TNW_white.png" alt="">
+          </a>
+        </div>
       </li>
 
-
-      <li>
-        <a href="http://www.behance.net/" target="_blank">
-          <div class="behance">
-            <img src="img/behance_original.png" style="position:absolute">
-            <img src="img/behance_white.png">
-          </div>
-        </a>
+      <li class="col-xs-5ths">
+        <div class="behance right">
+          <a href="http://www.behance.net/" target="_blank">
+            <img src="img/behance_original.png" alt="">
+            <img src="img/behance_white.png" alt="">
+          </a>
+        </div>
       </li>
 
-
-      <li>
-        <a href="http://www.dribbble.com/" target="_blank">
-          <div class="dribbble">
-            <img src="img/dribbble_original.png" style="position:absolute">
-            <img src="img/dribbble_white.png">
-          </div>
-        </a>
+      <li class="col-xs-5ths">
+        <div class="dribbble right">
+          <a href="http://www.dribbble.com/" target="_blank">
+            <img src="img/dribbble_original.png" alt="">
+            <img src="img/dribbble_white.png" alt="">
+          </a>
+        </div>
       </li>
-
     </ul>
   </div>
+</div>
 </div>
 
 <div class="container getInTouch">
@@ -404,7 +403,7 @@
  <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
  <div class="contact">
    <span class="hello">Say Hello!</span>
-   <form action="" class="contactForm">
+   <form class="contactForm">
     <input type="text" name="name" placeholder="Name" required><br>
     <input type="email" name="email" placeholder="Email" required><br>
     <input type="text" name="message" placeholder="Message" required><br>
@@ -433,105 +432,95 @@
           <span class="umbrellaText">Umbrella.</span>
         </a>
       </div>
-      <span class="footerText">
-        eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-        consequat.
-      </span>
+      <div class="footer-container">
+        <div class="footerText fiirst">
+          eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+          consequat.
+        </div>
+      </div>
     </div>
     <div class="col-xs-3">
       <div class="footerTitle text">
         Subscribe
       </div>
-      <form>
-        <input type="search">
-        <button type="submit"><i class="fa fa-long-arrow-right"></i></button>
-      </form>
-      <span class="searchText">eusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+      <div class="footer-container">
+        <form>
+          <input type="search">
+          <button type="submit"><i class="fa fa-long-arrow-right"></i></button>
+        </form>
+        <div class="searchText">eusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      </div>
     </div>
     <div class="col-xs-3">
       <div class="footerTitle text">
         Explore
       </div>
-      <ul>
-        <a href="#"><li>Envato</li></a>
-        <a href="#"><li>Themecurve</li></a>
-        <a href="#"><li>Kreativeshowcase</li></a>
-        <a href="#"><li>Freebiescurve</li></a>
-      </ul>
-      <ul>
-        <a href="#"><li>Themeforest</li></a>
-        <a href="#"><li>Microsoft</li></a>
-        <a href="#"><li>Google</li></a>
-        <a href="#"><li>Yahoo</li></a>
-      </ul>
-    </div>
-    <div class="col-xs-3">
-      <div class="authorSection">
-        <div class="authorText">
-        Created with <i class="fa fa-heart-o"></i> by</div>
-        <div class="author"><a href="http://www.guseynov.me" target="_blank">alexed23</a></div>
-        <div class="authorText">exclusive for kreativeshowcase</div>
+      <div class="footer-container">
+        <ul>
+          <li><a href="#">Envato</a></li>
+          <li><a href="#">Themecurve</a></li>
+          <li><a href="#">Kreativeshowcase</a></li>
+          <li><a href="#">Freebiescurve</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Themeforest</a></li>
+          <li><a href="#">Microsoft</a></li>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">Yahoo</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</footer>
-<!--<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>-->
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/initializeSlick.js"></script>
+    <div class="col-xs-3">
+      <div class="footer-container">
+        <div class="authorSection">
+          <div class="authorText">
+            Created with <i class="fa fa-heart-o"></i> by</div>
+            <a href="http://www.guseynov.me" target="_blank" class="author">alexed23</a>
+            <div class="authorText">exclusive for kreativeshowcase</div>
+          </div>
+          <div class="copyright">© 2014 Umbrella. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/initializeSlick.js"></script>
+  <script>
+
+  $(document).ready(function () {
 /*
-$(document).ready(function () {
-
-  function setOpacity() {
-    $('.slick-track .slick-active').css("opacity", "1");
-    $('.slick-track .slick-active').filter(function (index) {
-      return index === 1 || index === 5;
-    }).css("opacity", "0.1");
-  }
-
-  setOpacity();
-  $('.screenshotCarousel').bind("DOMSubtreeModified", setOpacity);
-*/
- /* var video = $('video')[0];
-  var playIcon = $('.playIcon');
+    function setOpacity() {
+      $('.screenshotCarousel .slick-track .slick-slide').css("opacity", "1");
 
 
-  function checkVideoState() {
-    if (!video.paused) {
-      playIcon.fadeOut('slow');
-      setTimeout(checkVideoState(), 300);
-      return;
-
-    } else {
-
-
-
+        $('.screenshotCarousel .slick-track .slick-active').filter(function (index) {
+        return index === 0 || index === 4;
+      }).css("opacity", "0.3");
     }
-  }
-
-  checkVideoState();
 
 
-if (video.paused == true) {
-playIcon.fadeIn('slow');
-}
+    setOpacity();
 
-$( ".target" ).change(function() {
-  alert( "Handler for .change() called." );
-});
+    $('.screenshotCarousel').bind("DOMSubtreeModified", setOpacity);
+    */
 
+    var resize = function (){
+      var width = $('figure').width();
+      $('.figure').height(width);
+      $('.caption').height(width);
+    };
 
-playIcon.click(function(){
-  video.play();
-  playIcon.fadeOut('slow');
-}) */
-/*
-});
-*/
-</script>
+    resize();
+    $(window).resize(function(){
+      resize();
+    });
+  });
+
+  </script>
 
 </body>
 </html>
